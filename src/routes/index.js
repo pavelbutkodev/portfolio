@@ -1,6 +1,7 @@
 import StartedPage from "../layout/StartedPage/";
 import SecondPage from "../layout/SecondPage";
 import ImagePage from "../layout/ImagePage";
+import BigSizePhoto from "../layout/BigSizePhoto";
 
 export const routes = [
 	{
@@ -14,8 +15,13 @@ export const routes = [
 		exact: true,
 	},
 	{
-		path: '/image/:id',
+		path: '/images/:id',
 		component: ImagePage,
+		exact: true,
+	},
+	{
+		path: '/photo/:id',
+		component: BigSizePhoto,
 		exact: true,
 	},
 ]
